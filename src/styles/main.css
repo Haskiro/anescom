@@ -7,6 +7,10 @@
   font-style: normal;
 }
 
+*{
+  scroll-behavior: smooth !important;
+}
+
 .h1-50{
   font-family: 'adineue PRO Cyr', sans-serif;
   font-style: normal;
