@@ -1,0 +1,22 @@
+{
+  "name": "anescom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haskiro/anescom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haskiro/anescom/issues"
+  },
+  "homepage": "https://github.com/Haskiro/anescom#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
