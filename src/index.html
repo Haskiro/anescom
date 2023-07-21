@@ -11,14 +11,14 @@
 </head>
 <body class='main__container'>
 <div class="fixed w-[100vw] h-[100vh] bg-black bg-opacity-50 z-20 left-0 top-0">
-    <div class="absolute w-full bg-white min-h-[90%] bottom-0 left-0 overflow-y-auto p-[20px] z-30">
+    <div class="absolute w-full bg-white min-h-[80%] bottom-0 left-0 overflow-y-auto p-[20px] z-30">
         <form class="w-[525px] shadow-[0px_0px_19px_0px_rgba(0,0,0,0.16)] rounded-md px-[40px] py-[30px] mx-auto mt-[5%] hidden"
               id="loginForm">
-            <label class="text-[18px] mb-[5px] block font-medium" form="email">
+            <label class="text-[18px] mb-[5px] block font-medium" form="loginEmail">
                 Ваш email
             </label>
             <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
-                   id="email"
+                   id="loginEmail"
                    name="email"
                    type="email"
                    placeholder="test@gmail.com"/>
@@ -73,11 +73,11 @@
                    pattern="8[0-9]{10}"
                    placeholder="89012345678"/>
 
-            <label class="text-[18px] mb-[5px] block font-medium" form="email">
+            <label class="text-[18px] mb-[5px] block font-medium" form="regEmail">
                 Ваш email
             </label>
             <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
-                   id="email"
+                   id="regEmail"
                    name="email"
                    type="email"
                    placeholder="test@gmail.com"/>
@@ -89,7 +89,7 @@
                 Войти
             </button>
         </form>
-        <form class="mt-[15%]">
+        <form class="mt-[15%] hidden" id="emailCode">
             <h2 class="text-[25px] text-center font-bold">На ваш email мы отправили код подтверждения</h2>
             <div class="flex gap-[17px] mb-[60px] mt-[40px] w-[445px] mx-auto">
                 <input type="number"
@@ -119,6 +119,42 @@
             </div>
             <button class="border-[3px] rounded-md w-[445px] border-[#BF282E] py-[12px] text-[20px] text-[#BF282E] mx-auto block hover:bg-[#BF282E] hover:text-white">
                 Подтвердить код
+            </button>
+        </form>
+        <form class="w-[525px] shadow-[0px_0px_19px_0px_rgba(0,0,0,0.16)] rounded-md px-[40px] py-[30px] mx-auto mt-[15%] hidden"
+              id="enterEmailForm">
+            <label class="text-[18px] mb-[5px] block font-medium" form="enterEmail">
+                Ваш email
+            </label>
+            <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
+                   id="enterEmail"
+                   name="email"
+                   type="email"
+                   placeholder="test@gmail.com"/>
+            <button class="w-full border-2 border-[#BF282E] rounded-md py-[14px] text-[#BF282E] text-[18px] font-medium hover:bg-[#BF282E] hover:text-white mb-[20px]" id="enterEmailFormButton">
+                Продолжить
+            </button>
+        </form>
+        <form class="w-[525px] shadow-[0px_0px_19px_0px_rgba(0,0,0,0.16)] rounded-md px-[40px] py-[30px] mx-auto mt-[5%]"
+              id="newPasswordForm">
+            <label class="text-[18px] mb-[5px] block font-medium" for="newPassword">
+                Придумайте новый пароль
+            </label>
+            <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
+                   id="newPassword"
+                   name="newPassword"
+                   type="password"
+                   placeholder="********"/>
+            <label class="text-[18px] mb-[5px] block font-medium" for="repeatNewPassword">
+                Повторите пароль
+            </label>
+            <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
+                   id="repeatNewPassword"
+                   name="repeatNewPassword"
+                   type="password"
+                   placeholder="********"/>
+            <button class="w-full border-2 border-[#BF282E] rounded-md py-[14px] text-[#BF282E] text-[18px] font-medium hover:bg-[#BF282E] hover:text-white mb-[20px]" id="newPasswordFormButton">
+                Восстановить
             </button>
         </form>
     </div>

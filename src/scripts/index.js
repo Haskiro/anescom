@@ -10,7 +10,7 @@ emailCodeInputList.forEach((input, idx) => {
         const { value } = target;
         const last = value.slice(-1);
         target.value = last.match(/[0-9]/) ? last : '';
-        if (idx + 1 < emailCodeInputList.length) {
+        if (idx + 1 < emailCodeInputList.length && target.value.length === 1) {
             emailCodeInputList[idx + 1].focus();
         }
     })

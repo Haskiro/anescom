@@ -860,6 +860,10 @@ video {
   margin-top: 15%;
 }
 
+.mt-\[20\%\] {
+  margin-top: 20%;
+}
+
 .block {
   display: block;
 }
@@ -918,6 +922,10 @@ video {
 
 .min-h-\[90\%\] {
   min-height: 90%;
+}
+
+.min-h-\[80\%\] {
+  min-height: 80%;
 }
 
 .w-\[1325px\] {
