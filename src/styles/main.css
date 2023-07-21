@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'adineue PRO Cyr';
-  src: url('/src/assets/fonts/adineue PRO Cyr/adineueprocyr_boldweb.ttf') format('truetype');
+  src: url('../assets/fonts/adineue PRO Cyr/adineueprocyr_boldweb.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -142,11 +142,11 @@ ul, li {
 }
 
 .offer {
-  background: url("/src/assets/images/offer/Rectangle 102.png");
+  background: url("../assets/images/offer/Rectangle102.png");
 }
 
 .partnership{
-  background: url("/src/assets/images/partnership/Rectangle 103.png");
+  background: url("../assets/images/partnership/Rectangle 103.png");
 }
 
 @media screen and (max-width: 1024px){
