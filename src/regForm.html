@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <title>Anescom</title>
+</head>
+<body class='main__container'>
+<main class="p-3">
+<form class="max-w-[440px] sm:w-[525px] mx-auto sm:mx-auto shadow-[0px_0px_19px_0px_rgba(0,0,0,0.16)] rounded-md px-[40px] py-[30px] mt-[5vh]"
+      id="regForm">
+    <label class="text-[16px] sm:text-[18px] mb-[5px] block font-medium" form="firstName">
+        Имя
+    </label>
+    <input class="border-1 border-[#B8B8B8] px-[15px] sm:px-[20px] py-[8px] sm:py-[13px] font-normal text-[14px] sm:text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[7px] sm:mb-[15px]"
+           id="firstName"
+           name="firstName"
+           type="text"
+           placeholder="Иван"/>
+
+    <label class="text-[16px] sm:text-[18px] mb-[5px] block font-medium" form="lastName">
+        Фамилия
+    </label>
+    <input class="border-1 border-[#B8B8B8] px-[15px] sm:px-[20px] py-[8px] sm:py-[13px] font-normal text-[14px] sm:text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[7px] sm:mb-[15px]"
+           id="lastName"
+           name="lastName"
+           type="text"
+           placeholder="Иванов"/>
+
+    <label class="text-[16px] sm:text-[18px] mb-[5px] block font-medium" form="phoneNumber">
+        Номер телефона
+    </label>
+    <input class="border-1 border-[#B8B8B8] px-[15px] sm:px-[20px] py-[8px] sm:py-[13px] font-normal text-[14px] sm:text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[7px] sm:mb-[15px]"
+           id="phoneNumber"
+           name="phoneNumber"
+           type="tel"
+           pattern="8[0-9]{10}"
+           placeholder="89012345678"/>
+
+    <label class="text-[16px] sm:text-[18px] mb-[5px] block font-medium" form="regEmail">
+        Ваш email
+    </label>
+    <input class="border-1 border-[#B8B8B8] px-[15px] sm:px-[20px] py-[8px] sm:py-[13px] font-normal text-[14px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
+           id="regEmail"
+           name="email"
+           type="email"
+           placeholder="test@gmail.com"/>
+    <button class="w-full border-2 border-[#BF282E] rounded-md text-[#BF282E] py-[10px] sm:py-[14px] text-[16px] sm:text-[18px] font-medium hover:bg-[#BF282E] hover:text-white mb-[10px] sm:mb-[20px]" id="regFormButton">
+        Зарегистрироваться
+    </button>
+    <button class="w-full border-2 border-[#003062] bg-[#003062] rounded-md py-[10px] sm:py-[14px] text-white text-[16px] sm:text-[18px] font-medium hover:bg-white hover:text-[#003062]"
+            id="switchFormButtonReg">
+        Войти
+    </button>
+</form>
+</main>
+</body>
+</html>

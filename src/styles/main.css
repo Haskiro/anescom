@@ -156,6 +156,10 @@ ul, li {
   transition: 0.3s;
 }
 
+.accountNavActive {
+  bottom: 0;
+}
+
 .offer {
   background: url("../assets/images/offer/Rectangle102.png");
 }

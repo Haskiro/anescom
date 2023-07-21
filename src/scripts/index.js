@@ -1,9 +1,18 @@
-const loginForm = document.getElementById("loginForm");
-const regForm = document.getElementById("regForm");
-const switchFormButtonLogin = document.getElementById("switchFormButtonLogin");
-const switchFormButtonReg = document.getElementById("switchFormButtonReg");
 const emailCodeInputList = document.querySelectorAll(".emailCodeNumb");
+const burgerButton = document.getElementById("burgerButton");
+const crossButton = document.getElementById("crossButton");
+const navSmall = document.getElementById("navSmall");
 
+burgerButton.addEventListener("click", () => {
+    navSmall.classList.toggle("translate-x-[0px]")
+})
+
+crossButton.addEventListener("click", () => {
+    navSmall.classList.toggle("translate-x-[0px]")
+})
+
+
+//Разрешает вводить только цифры и только по одной, также переключает на след поле после ввода в текущее
 emailCodeInputList.forEach((input, idx) => {
     input.addEventListener("input", (e) => {
         const { target } = e;
@@ -14,16 +23,4 @@ emailCodeInputList.forEach((input, idx) => {
             emailCodeInputList[idx + 1].focus();
         }
     })
-})
-
-switchFormButtonLogin.addEventListener("click", (e) => {
-    e.preventDefault();
-    loginForm.classList.toggle("hidden");
-    regForm.classList.toggle("hidden");
-})
-
-switchFormButtonReg.addEventListener("click", (e) => {
-    e.preventDefault();
-    loginForm.classList.toggle("hidden");
-    regForm.classList.toggle("hidden");
 })

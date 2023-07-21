@@ -10,155 +10,6 @@
     <title>Anescom</title>
 </head>
 <body class='main__container'>
-<div class="fixed w-[100vw] h-[100vh] bg-black bg-opacity-50 z-20 left-0 top-0">
-    <div class="absolute w-full bg-white min-h-[80%] bottom-0 left-0 overflow-y-auto p-[20px] z-30">
-        <form class="w-[525px] shadow-[0px_0px_19px_0px_rgba(0,0,0,0.16)] rounded-md px-[40px] py-[30px] mx-auto mt-[5%] hidden"
-              id="loginForm">
-            <label class="text-[18px] mb-[5px] block font-medium" form="loginEmail">
-                Ваш email
-            </label>
-            <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
-                   id="loginEmail"
-                   name="email"
-                   type="email"
-                   placeholder="test@gmail.com"/>
-            <div class="flex justify-between items-center mb-[10px]">
-                <label class="text-[18px] block font-medium" form="password">
-                    Ваш пароль
-                </label>
-                <button class="text-[#012F63] text-[16px] hover:underline">
-                    Забыли пароль?
-                </button>
-            </div>
-            <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[20px]"
-                   id="password"
-                   name="password"
-                   type="password"
-                   placeholder="********"/>
-            <button class="w-full border-2 border-[#BF282E] rounded-md py-[14px] text-[#BF282E] text-[18px] font-medium hover:bg-[#BF282E] hover:text-white mb-[20px]">
-                Войти
-            </button>
-            <button class="w-full border-2 border-[#003062] bg-[#003062] rounded-md py-[14px] text-white text-[18px] font-medium hover:bg-white hover:text-[#003062]"
-                    id="switchFormButtonLogin">
-                Зарегистрироваться
-            </button>
-        </form>
-        <form class="w-[525px] shadow-[0px_0px_19px_0px_rgba(0,0,0,0.16)] rounded-md px-[40px] py-[48px] mx-auto hidden"
-              id="regForm">
-            <label class="text-[18px] mb-[5px] block font-medium" form="firstName">
-                Имя
-            </label>
-            <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
-                   id="firstName"
-                   name="firstName"
-                   type="text"
-                   placeholder="Иван"/>
-
-            <label class="text-[18px] mb-[5px] block font-medium" form="lastName">
-                Фамилия
-            </label>
-            <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
-                   id="lastName"
-                   name="lastName"
-                   type="text"
-                   placeholder="Иванов"/>
-
-            <label class="text-[18px] mb-[5px] block font-medium" form="phoneNumber">
-                Номер телефона
-            </label>
-            <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
-                   id="phoneNumber"
-                   name="phoneNumber"
-                   type="tel"
-                   pattern="8[0-9]{10}"
-                   placeholder="89012345678"/>
-
-            <label class="text-[18px] mb-[5px] block font-medium" form="regEmail">
-                Ваш email
-            </label>
-            <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
-                   id="regEmail"
-                   name="email"
-                   type="email"
-                   placeholder="test@gmail.com"/>
-            <button class="w-full border-2 border-[#BF282E] rounded-md py-[14px] text-[#BF282E] text-[18px] font-medium hover:bg-[#BF282E] hover:text-white mb-[20px]">
-                Зарегистрироваться
-            </button>
-            <button class="w-full border-2 border-[#003062] bg-[#003062] rounded-md py-[14px] text-white text-[18px] font-medium hover:bg-white hover:text-[#003062]"
-                    id="switchFormButtonReg">
-                Войти
-            </button>
-        </form>
-        <form class="mt-[15%] hidden" id="emailCode">
-            <h2 class="text-[25px] text-center font-bold">На ваш email мы отправили код подтверждения</h2>
-            <div class="flex gap-[17px] mb-[60px] mt-[40px] w-[445px] mx-auto">
-                <input type="number"
-                       class="border-2 border-[#B8B8B8] rounded-md w-[60px] h-[60px] text-[25px] text-center emailCodeNumb"
-                       min="0"
-                       max="9">
-                <input type="number"
-                       class="border-2 border-[#B8B8B8] rounded-md w-[60px] h-[60px] text-[25px] text-center emailCodeNumb"
-                       min="0"
-                       max="9">
-                <input type="number"
-                       class="border-2 border-[#B8B8B8] rounded-md w-[60px] h-[60px] text-[25px] text-center emailCodeNumb"
-                       min="0"
-                       max="9">
-                <input type="number"
-                       class="border-2 border-[#B8B8B8] rounded-md w-[60px] h-[60px] text-[25px] text-center emailCodeNumb"
-                       min="0"
-                       max="9">
-                <input type="number"
-                       class="border-2 border-[#B8B8B8] rounded-md w-[60px] h-[60px] text-[25px] text-center emailCodeNumb"
-                       min="0"
-                       max="9">
-                <input type="number"
-                       class="border-2 border-[#B8B8B8] rounded-md w-[60px] h-[60px] text-[25px] text-center emailCodeNumb"
-                       min="0"
-                       max="9">
-            </div>
-            <button class="border-[3px] rounded-md w-[445px] border-[#BF282E] py-[12px] text-[20px] text-[#BF282E] mx-auto block hover:bg-[#BF282E] hover:text-white">
-                Подтвердить код
-            </button>
-        </form>
-        <form class="w-[525px] shadow-[0px_0px_19px_0px_rgba(0,0,0,0.16)] rounded-md px-[40px] py-[30px] mx-auto mt-[15%] hidden"
-              id="enterEmailForm">
-            <label class="text-[18px] mb-[5px] block font-medium" form="enterEmail">
-                Ваш email
-            </label>
-            <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
-                   id="enterEmail"
-                   name="email"
-                   type="email"
-                   placeholder="test@gmail.com"/>
-            <button class="w-full border-2 border-[#BF282E] rounded-md py-[14px] text-[#BF282E] text-[18px] font-medium hover:bg-[#BF282E] hover:text-white mb-[20px]" id="enterEmailFormButton">
-                Продолжить
-            </button>
-        </form>
-        <form class="w-[525px] shadow-[0px_0px_19px_0px_rgba(0,0,0,0.16)] rounded-md px-[40px] py-[30px] mx-auto mt-[5%]"
-              id="newPasswordForm">
-            <label class="text-[18px] mb-[5px] block font-medium" for="newPassword">
-                Придумайте новый пароль
-            </label>
-            <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
-                   id="newPassword"
-                   name="newPassword"
-                   type="password"
-                   placeholder="********"/>
-            <label class="text-[18px] mb-[5px] block font-medium" for="repeatNewPassword">
-                Повторите пароль
-            </label>
-            <input class="border-1 border-[#B8B8B8] px-[20px] py-[13px] font-normal text-[16px] w-full placeholder-[#B8B8B8] rounded-md border mb-[15px]"
-                   id="repeatNewPassword"
-                   name="repeatNewPassword"
-                   type="password"
-                   placeholder="********"/>
-            <button class="w-full border-2 border-[#BF282E] rounded-md py-[14px] text-[#BF282E] text-[18px] font-medium hover:bg-[#BF282E] hover:text-white mb-[20px]" id="newPasswordFormButton">
-                Восстановить
-            </button>
-        </form>
-    </div>
-</div>
 <header class="header flex-center bg-none z-10 relative" id="top">
     <div class='absolute top-[38px] left-[26px]'>
         <svg width="61" height="25" viewBox="0 0 61 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -168,36 +19,35 @@
                   fill="#363636"/>
         </svg>
     </div>
-    <div class="container hidden lg:block">
+    <div class="container hidden xl:block">
         <nav class='w-full flex-end py-9'>
-            <ul class='flex-center'>
+            <ul class='flex justify-around'>
                 <li class='h1-16-mont mr-10 nav-link__active cursor-pointer'><a href="#">Главная</a></li>
                 <li class='h1-16-mont mr-10 cursor-pointer'><a href="#catalog">Каталог</a></li>
                 <li class='h1-16-mont mr-10 cursor-pointer'><a href="#quality">Качество продукции</a></li>
                 <li class='h1-16-mont mr-10 cursor-pointer'><a href="#partnership">Партнерам</a></li>
                 <li class='h1-16-mont mr-10 cursor-pointer'><a href="#about">О компании</a></li>
-                <li class='h1-16-mont cursor-pointer'><a href="#contacts">Контакты</a></li>
+                <li class='h1-16-mont mr-10 cursor-pointer'><a href="#contacts">Контакты</a></li>
+                <li class='h1-16-mont cursor-pointer'><button id="accountButtonOne">Личный кабинет</button></li>
             </ul>
         </nav>
     </div>
 
-    <div class='flex items-center justify-end lg:hidden w-full py-[36px]'>
-        <button class='burger-button pr-[15px] w-[30px] h-[30px]'><img src="assets/vector/burger.svg"></button>
+    <div class='flex items-center justify-end xl:hidden w-full py-[36px]'>
+        <button class='burger-button mr-[15px] w-[30px] h-[30px]' id="burgerButton"><img class= h-[30px]" src="assets/vector/burger.svg"></button>
     </div>
-    <div class="flex items-center justify-end lg:hidden">
-        <nav class=' burger-menu fixed top-0 right-0 w-[300px] bg-[#fafafa] h-full burger-menu z-40'>
-            <!--             style={isActive === false ? {transform:'translateX(300px)'} : {transform: 'translateX(0)'}}-->
-
-
+    <div class="flex items-center justify-end xl:hidden">
+        <nav class='burger-menu fixed top-0 right-0 w-[300px] bg-[#fafafa] h-full burger-menu z-40 translate-x-[300px]' id="navSmall">
             <ul class='flex-col flex-center mt-10'>
-                <button class='absolute top-6 right-6 text-[20px] cursor-pointer w-[20px] h-[20px]'>
+                <button class='absolute top-6 right-6 text-[20px] cursor-pointer w-[20px] h-[20px]' id="crossButton">
                     <img src="assets/vector/cross.svg"></button>
-                <li class='h1-16-mont mt-8 nav-link__active cursor-pointer'>Главная</li>
-                <li class='h1-16-mont mt-8 cursor-pointer'>Каталог</li>
-                <li class='h1-16-mont mt-8 cursor-pointer'>Качество продукции</li>
-                <li class='h1-16-mont mt-8 cursor-pointer'>Партнерам</li>
-                <li class='h1-16-mont mt-8 cursor-pointer'>О компании</li>
-                <li class='h1-16-mont mt-8 cursor-pointer'>Контакты</li>
+                <li class='h1-16-mont mt-8 nav-link__active cursor-pointer'><a href="#">Главная</a></li>
+                <li class='h1-16-mont mt-8 cursor-pointer'><a href="#catalog">Каталог</a></li>
+                <li class='h1-16-mont mt-8 cursor-pointer'><a href="#quality">Качество продукции</a></li>
+                <li class='h1-16-mont mt-8 cursor-pointer'><a href="#partnership">Партнерам</a></li>
+                <li class='h1-16-mont mt-8 cursor-pointer'><a href="#about">О компании</a></li>
+                <li class='h1-16-mont mt-8 cursor-pointer'><a href="#contacts">Контакты</a></li>
+                <li class='h1-16-mont mt-8 cursor-pointer'><button id="accountButtonTwo">Личный кабинет</button></li>
             </ul>
         </nav>
     </div>
@@ -206,7 +56,7 @@
     <section class="main relative z-[1] h-[684px]">
         <img src="assets/images/main/Rectangle 85.png"
              alt="building_photo"
-             class='absolute top-[-116px] right-0 w-[1325px] h-[800px] object-cover opacity-30 lg:opacity-100 '/>
+             class='absolute top-[-116px] right-0 w-[1325px] h-[800px] object-cover opacity-30 xl:opacity-100 '/>
         <div class="container relative top-[150px] sm:top-0">
             <div class="sm:top-[72px] left-0  sm:left-5 sm:absolute relative flex-col flex justify-center items-center sm:block">
                 <h1 class='h1-40 sm:!text-[50px] sm:max-w-[540px]  sm:text-start text-center'>
