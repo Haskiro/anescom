@@ -10,9 +10,10 @@
     <title>Anescom</title>
 </head>
 <body class='main__container'>
-<div class="fixed w-[100vw] h-[100vh] bg-black bg-opacity-50 z-10 left-0 top-0">
-    <div class="absolute w-full bg-white min-h-[90%] bottom-0 left-0 overflow-y-auto p-[20px] z-11">
-        <form class="w-[525px] shadow-[0px_0px_19px_0px_rgba(0,0,0,0.16)] rounded-md px-[40px] py-[30px] mx-auto mt-[5%]" id="loginForm">
+<div class="fixed w-[100vw] h-[100vh] bg-black bg-opacity-50 z-20 left-0 top-0">
+    <div class="absolute w-full bg-white min-h-[90%] bottom-0 left-0 overflow-y-auto p-[20px] z-30">
+        <form class="w-[525px] shadow-[0px_0px_19px_0px_rgba(0,0,0,0.16)] rounded-md px-[40px] py-[30px] mx-auto mt-[5%]"
+              id="loginForm">
             <label class="text-[18px] mb-[5px] block font-medium" form="email">
                 Ваш email
             </label>
@@ -37,11 +38,13 @@
             <button class="w-full border-2 border-[#BF282E] rounded-md py-[14px] text-[#BF282E] text-[18px] font-medium hover:bg-[#BF282E] hover:text-white mb-[20px]">
                 Войти
             </button>
-            <button class="w-full border-2 border-[#003062] bg-[#003062] rounded-md py-[14px] text-white text-[18px] font-medium hover:bg-white hover:text-[#003062]" id="switchFormButtonLogin">
-                    Зарегистрироваться
+            <button class="w-full border-2 border-[#003062] bg-[#003062] rounded-md py-[14px] text-white text-[18px] font-medium hover:bg-white hover:text-[#003062]"
+                    id="switchFormButtonLogin">
+                Зарегистрироваться
             </button>
         </form>
-        <form class="w-[525px] shadow-[0px_0px_19px_0px_rgba(0,0,0,0.16)] rounded-md px-[40px] py-[48px] mx-auto hidden" id="regForm">
+        <form class="w-[525px] shadow-[0px_0px_19px_0px_rgba(0,0,0,0.16)] rounded-md px-[40px] py-[48px] mx-auto hidden"
+              id="regForm">
             <label class="text-[18px] mb-[5px] block font-medium" form="firstName">
                 Имя
             </label>
@@ -81,7 +84,8 @@
             <button class="w-full border-2 border-[#BF282E] rounded-md py-[14px] text-[#BF282E] text-[18px] font-medium hover:bg-[#BF282E] hover:text-white mb-[20px]">
                 Зарегистрироваться
             </button>
-            <button class="w-full border-2 border-[#003062] bg-[#003062] rounded-md py-[14px] text-white text-[18px] font-medium hover:bg-white hover:text-[#003062]"id="switchFormButtonReg" >
+            <button class="w-full border-2 border-[#003062] bg-[#003062] rounded-md py-[14px] text-white text-[18px] font-medium hover:bg-white hover:text-[#003062]"
+                    id="switchFormButtonReg">
                 Войти
             </button>
         </form>
@@ -113,7 +117,7 @@
         <button class='burger-button pr-[15px] w-[30px] h-[30px]'><img src="assets/vector/burger.svg"></button>
     </div>
     <div class="flex items-center justify-end lg:hidden">
-        <nav class=' burger-menu fixed top-0 right-0 w-[300px] bg-[#fafafa] h-full burger-menu z-20'>
+        <nav class=' burger-menu fixed top-0 right-0 w-[300px] bg-[#fafafa] h-full burger-menu z-40'>
             <!--             style={isActive === false ? {transform:'translateX(300px)'} : {transform: 'translateX(0)'}}-->
 
 
@@ -131,7 +135,7 @@
     </div>
 </header>
 <main>
-    <section class="main relative z-[1] h-[684px]">
+    <section class="main relative z-10 h-[684px]">
         <img src="assets/images/main/Rectangle 85.png"
              alt="building_photo"
              class='absolute top-[-116px] right-0 w-[1325px] h-[800px] object-cover opacity-30 lg:opacity-100 '/>
