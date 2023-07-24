@@ -1,181 +1,197 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 @font-face {
-  font-family: 'adineue PRO Cyr';
-  src: url('../assets/fonts/adineue PRO Cyr/adineueprocyr_boldweb.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'adineue PRO Cyr';
+    src: url('../assets/fonts/adineue PRO Cyr/adineueprocyr_boldweb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-*{
-  scroll-behavior: smooth !important;
+* {
+    scroll-behavior: smooth !important;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
-  -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 input[type='number'] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
-.h1-50{
-  font-family: 'adineue PRO Cyr', sans-serif;
-  font-style: normal;
-  font-size: 50px;
-  line-height: 120%;
+.h1-50 {
+    font-family: 'adineue PRO Cyr', sans-serif;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 120%;
 }
 
 .h1-40 {
-  font-family: 'adineue PRO Cyr', sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 40px;
-  line-height: 120%;
+    font-family: 'adineue PRO Cyr', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 120%;
 }
 
 .h1-16-mont {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
 }
 
 .h1-16-ubuntu {
-  font-family: 'Ubuntu', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
 }
 
 .h1-20-mont {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
 }
 
-.h1-22{
-  font-family: 'adineue PRO Cyr', sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 22px;
-  line-height: 26px;
+.h1-22 {
+    font-family: 'adineue PRO Cyr', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 26px;
 }
 
-.h1-15{
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+.h1-15 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
 }
 
 .h1-20-ubuntu {
-  font-family: 'Ubuntu', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
 }
 
 html {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 html, body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  background: #fafafa;
-  color: #363636;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background: #fafafa;
+    color: #363636;
 }
 
 .main__container {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 .container {
-  max-width: 1170px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto; }
+    max-width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .content__container {
-  margin-left: auto;
-  margin-right: auto; }
+    margin-left: auto;
+    margin-right: auto;
+}
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 a {
-  text-decoration: none;
-  color: inherit; }
+    text-decoration: none;
+    color: inherit;
+}
 
 h1, h2, h3, h4, h5, h6, p {
-  font-size: inherit; }
+    font-size: inherit;
+}
 
 input, button {
-  font-family: inherit;
-  font-size: inherit; }
+    font-family: inherit;
+    font-size: inherit;
+}
 
 input:focus, button:focus {
-  outline: none; }
+    outline: none;
+}
 
 ul, li {
-  list-style: none; }
+    list-style: none;
+}
 
 .nav-link__active {
-  color: #BF282E;
-  position: relative;
+    color: #BF282E;
+    position: relative;
 }
 
 .nav-link__active::before {
-  content: '';
-  width: 100%;
-  position: absolute;
-  top: -10px;
-  height: 1px ;
-  background: #BF282E;
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    height: 1px;
+    background: #BF282E;
 }
 
-.burger-menu{
-  box-shadow: 4px 4px 20px 0px rgba(34, 60, 80, 0.2);
-  transition: 0.3s;
+.burger-menu {
+    box-shadow: 4px 4px 20px 0px rgba(34, 60, 80, 0.2);
+    transition: 0.3s;
 }
 
 .accountNavActive {
-  bottom: 0;
+    bottom: 0;
+}
+
+.section-count-input:checked+.section-count-label {
+    background: rgba(217, 217, 217, 0.50);
+}
+
+.section-count-label {
+    cursor: pointer;
 }
 
 .offer {
-  background: url("../assets/images/offer/Rectangle102.png");
+    background: url("../assets/images/offer/Rectangle102.png");
 }
 
-.partnership{
-  background: url("../assets/images/partnership/Rectangle 103.png");
+.partnership {
+    background: url("../assets/images/partnership/Rectangle 103.png");
 }
 
-@media screen and (max-width: 1024px){
-  .become-partner {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
+@media screen and (max-width: 1024px) {
+    .become-partner {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 
-  .become-partner a {
-    margin-top: 8px;
-  }
+    .become-partner a {
+        margin-top: 8px;
+    }
 }
