@@ -328,16 +328,31 @@
             вызывайте бесплатно замерщика. Раздвижные, фигурные, входные двери, портальные, круглые, треугольные окна
             требуют уточнения их размеров.
         </p>
-        <div class="mt-[23px]">
-            <img src="assets/images/calculator/calculator-bg-2.jpeg" alt="windows">
-            <form>
-                <button class="border border-4 border-[#BE302F] text-[22px] text-[#BE302F] py-[16px] px-[84px]">
-                    <p style="text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)">Оставить запрос</p>
+        <div class="mt-[23px] w-full relative sm:bg-black max-w-[286px] sm:max-w-none mx-auto">
+            <img class="hidden sm:block  w-[682px] h-[301px] lg:h-[410px] object-cover opacity-50" src="assets/images/calculator/calculator-bg-2.jpeg" alt="windows">
+            <img class="hidden sm:block absolute right-0 top-[-1px] h-[302px] w-[734px] object-cover lg:h-[411px]" src="assets/vector/bg-request.svg" alt="request background vector">
+            <form class="sm:absolute right-[10px] lg:right-[30px] top-[64px] flex flex-col items-end">
+                <button class="request-button text-[16px] sm:text-[22px] text-[#BF282E] font-bold relative">
+                    <svg class="w-[280px] h-[50px] sm:w-auto sm:h-auto" width="346" height="63" viewBox="0 0 346 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M344 61V2H25L3 61H344Z" stroke="url(#paint0_linear_734_192)" stroke-width="4"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_734_192" x1="3" y1="32.0175" x2="347.517" y2="28.0103" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#BF282E"/>
+                                <stop offset="1" stop-color="#BF282E"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="absolute top-[50%] left-[50%] translate-x-[-47%] translate-y-[-50%] whitespace-nowrap block" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">Оставить запрос</span>
                 </button>
+                <div class="flex gap-[6px] mt-[25px] mb-[17px]">
+                    <input class="w-[140px] sm:w-[185px] bg-[rgba(217,217,217,0.45)] py-[5px] px-[15px] text-[12px] text-black font-light rounded-sm border border-1 border-[#D9DADF]" type="text" placeholder="Имя" name="name">
+                    <input class="w-[140px] sm:w-[185px] bg-[rgba(217,217,217,0.45)] py-[5px] px-[15px] text-[12px] text-black font-light rounded-sm border border-1 border-[#D9DADF]" type="tel" placeholder="Телефон" name="telephone">
+                </div>
+                <input class="w-[286px] sm:w-[376px] bg-[rgba(217,217,217,0.45)] py-[5px] px-[15px] text-[12px] text-black font-light rounded-sm border border-1 border-[#D9DADF]" type="email" placeholder="E-Mail" name="email">
             </form>
         </div>
     </section>
-    <section class='mt-[80px]' id="contacts">
+    <section class='mt-[40px] sm:mt-[80px]' id="contacts">
         <div class="container">
             <div class="flex flex-col">
                 <h1 class='uppercase text-[#363636] text-[25px] sm:text-[36px] lg:text-[48px]  font-bold mt-[26px] mb-[20px] sm:mb-[50px]'>
